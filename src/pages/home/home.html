@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Simple Weather app!</h2>
+  <div class="center">
+    <ion-item>
+       <ion-label floating>Enter a city</ion-label>
+      <ion-input [(ngModel)] = "country.city" type="text" value=""></ion-input>
+    </ion-item>
+    <h1>{{weather}}</h1>
+    <button center (click)="getWeather()" ion-button outline>Get weather</button>
+  </div>
+
+</ion-content>
